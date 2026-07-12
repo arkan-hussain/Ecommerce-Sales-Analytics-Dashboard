@@ -1,0 +1,6 @@
+# Ignore local environment files
+*.csv
+*.xlsx
+*.pbix
+*.pdf
+*.png
