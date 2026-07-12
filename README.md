@@ -25,12 +25,7 @@ data, with parallel implementations in Streamlit (Python) and Tableau.
 │   └── sales_orders_tableau.csv # Data source used by the workbook
 └── Tableau_Dashboard_Build_G...  # Build notes / guide
 
-## Run the Streamlit Dashboard
 
-```bash
-pip install -r requirements.txt
-streamlit run app.py
-```
 
 ## Open the Tableau Dashboard
 
@@ -40,9 +35,16 @@ The workbook connects to `tableau/Data/sales_orders_tableau.csv` using a
 relative path, so keep the `Data/` folder in place alongside the `.twb` file
 — if you move one, move both together.
 
-## Dashboard Layout
+## Open the Dashboard
 
-**KPIs:** Total Orders, Total Customers, Total Revenue, Average Order Value
+Open `tableau/Sales_Orders_Dashboard.twb` in Tableau Desktop 2026.2 or newer.
+
+The workbook connects to `tableau/Data/sales_orders_tableau.csv` using a
+relative path, so the `Data/` folder must stay in the same directory as the
+`.twb` file — if you move one, move both together.
+
+See `tableau/README.md` for the full file breakdown and
+`tableau/Tableau_Dashboard_Build_Guide.md` for field/sheet/filter details.
 
 **Charts:**
 - Monthly sales trend (revenue over time)
